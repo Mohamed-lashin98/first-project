@@ -1,0 +1,353 @@
+body{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	perspective: 500px;
+
+    
+}
+
+.nav-bar{
+	margin-bottom: 50px;
+	display: flex;
+	
+	
+}
+
+.logo{
+	flex-shrink: 1;
+	margin-left: 50px;
+	margin-top: 30px;
+    transition: .8s ease-in-out;
+   
+}
+
+.logo:hover{
+	transform: translateY(30px);
+}
+
+
+.nav-menu{
+    flex-grow: 1;
+    direction: rtl;
+
+
+    
+}
+
+.nav-bar .nav-menu ul{
+	list-style-type: none;
+	padding: 10px;
+	transition: .5s ease-in-out;
+    
+
+
+}
+
+.nav-bar .nav-menu ul li{
+	display: inline-block;
+    transform: rotatez(-30deg);
+    transition: .5s ease-in-out;
+	margin: 10px;
+
+}
+
+
+.nav-bar .nav-menu ul li:hover{transform: rotatez(0deg)}
+
+.nav-bar .nav-menu ul li a{
+	text-decoration: none;
+	color: black;
+	font-size: 24px;
+
+    transition: .4s ease-in-out;
+
+}
+
+
+.nav-bar .nav-menu ul li a:hover{
+    color: #6653e5;
+    
+ }
+/*-----------end nav bar----------------*/
+
+
+
+.site-banner{
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 100px;
+
+}
+
+
+.content{
+	flex-grow:1;
+	background: url(/../img/banner/home-banner.png);
+	
+
+}
+
+.content .text{
+	width: 100%;
+	
+}
+
+
+.site-banner h2{
+    font-size: 70px;
+}
+
+
+.banner-img img{
+	flex-grow:1 ;
+	width: 100%;
+	max-width: 500px;
+}
+
+
+.site-banner .buttons{
+	
+	margin: 20px;
+
+}
+
+
+.site-banner .buttons button{
+	padding: 8px 30px;
+	margin: 7px;
+	font-size: 23px;
+    color: white;
+	border-radius: 7px;
+	transition: .5s ease-in-out;
+    border: none;
+    text-transform: uppercase;
+    width: 170px;
+}
+
+
+
+.site-banner .buttons .active{
+	background-color: black;
+	
+
+}
+
+.site-banner .buttons .active:hover{
+	background-color: red;
+	color: black;
+	transform: translateZ(20px);
+}
+
+.site-banner .buttons .cv{
+	color:black;
+	background-color: unset;
+}
+
+.site-banner .buttons .cv:hover{
+	background-color: gold;
+	transform: translateZ(20px);
+
+}
+
+/*-------------------end banner------------------------------*/
+
+
+.about-area{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.about-area .about-img {
+	
+    
+   max-width: 70%;
+    
+
+}
+
+
+.about-area .about-text{
+	flex: 1;
+}
+
+.about-area .about-text h4{
+	text-transform: uppercase;
+	font-size: 30px;
+
+}
+
+.about-area .about-text h5{
+	text-transform: uppercase;
+	font-size: 20px;
+	color: #7f7f7f;
+	width: 100%
+}
+
+.about-area .about-text .gm button
+{
+	padding: 8px 20px;
+	margin: 15px;
+	font-size: 23px;
+    color: white;
+	border-radius: 7px;
+	transition: .5s ease-in-out;
+    border: none;
+    text-transform: uppercase;
+    width: 50%;
+    background-color: black;
+
+	
+}
+
+
+.about-area .about-text .gm button:hover{
+		background-color: red;
+	color: black;
+	transform: translate3d(-20px,-40px,20px);
+
+}
+/*------------brand start--------*/
+
+.brand-area{
+	display: flex;
+	
+	min-height: 500px; 
+	padding-bottom: 150px;
+}
+
+
+.brand-images{
+	position: relative;
+	
+	flex: 1;
+	margin: 10px;	
+	align-items: center;
+	
+    
+
+}
+
+.brand-images .first-row{
+	
+	
+	flex: 1;
+	
+}
+
+
+
+.single-band{
+	position: relative;
+	margin:30px;
+	width:;
+	padding: 25px;
+    transition: .6s ease-in-out;
+    width: 90px;
+    height: 40px;
+
+}
+
+
+
+.single-band:hover
+{
+ 	transform: scale(1.2);
+	filter: brightness(0.15);
+	box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+
+}
+/*----------end brand area----------- */
+
+/*----------about area----------- */
+
+
+.brand-area .exp-area{
+	flex: 1;
+	margin: 10px;
+	background-color: #fef7f7;
+	background-color: gray;
+}
+
+/*-----------end brand area--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+.services {
+	padding: 0 20px;
+	display: flex;
+	flex-wrap: wrap; 
+	padding-bottom: 200px;
+	justify-content: center;
+
+
+}
+
+.services .s1,.s2,.s3,.s4{
+	background-color: #FFEBCD;
+	height: 350px;
+    margin: 0 10px 10px 0;
+	transition: .6s ease-in-out;
+	border-radius: 15px;
+	padding: 20px;
+
+}
+
+.s2 img:hover{
+	transform: rotate(360deg);
+	transition: .6s ease-in-out;
+}
+
+.s4 img:hover{
+
+	transform: translate(850px,-400px);
+
+	transition: 1s ease-in-out
+}
+
+ .services :hover{
+ 	box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+ 	color: black;
+
+ }
+ 
+.para {
+	max-width: 250px;
+	word-wrap: break-word;
+	text-transform: uppercase;
+	padding: 15px;
+	color: #777777;
+	font-weight:100;
+
+	
+
+}
+.para:hover{
+    box-shadow: none;
+
+}
+.services img:hover{
+	box-shadow: none;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
